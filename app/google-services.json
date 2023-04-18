@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1054716159437",
+    "project_id": "mobileappassignment-64d5f",
+    "storage_bucket": "mobileappassignment-64d5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054716159437:android:e6c8d57f4b69840cbbd084",
+        "android_client_info": {
+          "package_name": "com.example.madasm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054716159437-admv920vok3ov95djdglo91eaee7cod7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAau_au4d8Y9AX38s26EaZ36m76rkoMDUA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054716159437-admv920vok3ov95djdglo91eaee7cod7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

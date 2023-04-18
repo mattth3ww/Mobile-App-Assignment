@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_e">
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="50dp"
+        android:hint="In-App Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etName"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEmail"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/etRepeatPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:hint="Repeat Password"
+        android:inputType="textPassword" />
+
+    <!--    Image Button has issue, need to fix this later on-->
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/ibPasswordVisibility"-->
+    <!--        android:layout_width="24dp"-->
+    <!--        android:layout_height="24dp"-->
+    <!--        android:layout_alignEnd="@+id/etRepeatPassword"-->
+    <!--        android:layout_alignTop="@+id/etPassword"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:background="@android:color/transparent"-->
+    <!--        android:padding="4dp"-->
+    <!--        android:scaleType="fitCenter"-->
+    <!--        android:src="@drawable/ic_password_visibility" />-->
+
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/ibRepeatPasswordVisibility"-->
+    <!--        android:layout_width="24dp"-->
+    <!--        android:layout_height="24dp"-->
+    <!--        android:layout_alignEnd="@+id/etRepeatPassword"-->
+    <!--        android:layout_alignTop="@+id/etRepeatPassword"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:background="@android:color/transparent"-->
+    <!--        android:padding="4dp"-->
+    <!--        android:scaleType="fitCenter"-->
+    <!--        android:src="@drawable/ic_password_visibility" />-->
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etRepeatPassword"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/tvLoginLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRegister"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:textSize="14sp" />
+
+</RelativeLayout>
