@@ -6,13 +6,13 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml
+8-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml
+9-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:4:5-67
-11-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:4:22-64
+11-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:4:5-67
+11-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:4:22-64
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 12-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\927a92bb58512ffd043b142ab061708a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
 12-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\927a92bb58512ffd043b142ab061708a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:22-76
@@ -27,88 +27,88 @@
 15-->[com.google.android.gms:play-services-measurement-api:21.2.1] C:\Users\ASUS\.gradle\caches\transforms-3\bc83c3dc6af29fc79df1dfd546268f66\transformed\play-services-measurement-api-21.2.1\AndroidManifest.xml:25:22-76
 16
 17    <application
-17-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:5:5-48:19
+17-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:5:5-48:19
 18        android:allowBackup="true"
-18-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:6:9-35
+18-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 19-->[androidx.core:core:1.5.0] C:\Users\ASUS\.gradle\caches\transforms-3\649d1fa301748884f14818a7f0db4c14\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 20        android:debuggable="true"
 21        android:icon="@mipmap/ic_launcher"
-21-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:7:9-43
+21-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:7:9-43
 22        android:label="BookMate"
-22-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:8:9-33
+22-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:8:9-33
 23        android:roundIcon="@mipmap/ic_launcher_round"
-23-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:9:9-54
+23-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:9:9-54
 24        android:supportsRtl="true"
-24-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:10:9-35
+24-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:10:9-35
 25        android:testOnly="true"
 26        android:theme="@style/AppTheme" >
-26-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:11:9-40
+26-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:11:9-40
 27        <activity
-27-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:12:9-19:20
+27-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:12:9-15:20
 28            android:name="com.example.madasm.Login"
-28-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:13:13-34
+28-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:13:13-34
 29            android:exported="true" >
-29-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:14:13-36
-30            <intent-filter>
-30-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:15:13-18:29
-31                <action android:name="android.intent.action.MAIN" />
-31-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:16:17-69
-31-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:16:25-66
-32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:17:17-77
-33-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:17:27-74
-34            </intent-filter>
-35        </activity>
-36        <activity
-36-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:20:9-23:20
-37            android:name="com.example.madasm.RegistrationActivity"
-37-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:21:13-49
-38            android:exported="true" >
-38-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:22:13-36
-39        </activity>
-40        <activity
-40-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:24:9-27:20
-41            android:name="com.example.madasm.ForgotPasswordActivity"
-41-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:25:13-51
-42            android:exported="true" >
-42-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:26:13-36
-43        </activity>
-44        <activity
-44-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:28:9-31:20
-45            android:name="com.example.madasm.SettingActivity"
-45-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:29:13-44
-46            android:exported="true" >
-46-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:30:13-36
-47        </activity>
-48        <activity
-48-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:32:9-35:20
-49            android:name="com.example.madasm.MainActivity"
-49-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:33:13-41
-50            android:exported="true" >
-50-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:34:13-36
+29-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:14:13-36
+30        </activity>
+31        <activity
+31-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:16:9-19:20
+32            android:name="com.example.madasm.RegistrationActivity"
+32-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:17:13-49
+33            android:exported="true" >
+33-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:18:13-36
+34        </activity>
+35        <activity
+35-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:20:9-23:20
+36            android:name="com.example.madasm.ForgotPasswordActivity"
+36-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:21:13-51
+37            android:exported="true" >
+37-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:22:13-36
+38        </activity>
+39        <activity
+39-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:24:9-27:20
+40            android:name="com.example.madasm.SettingActivity"
+40-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:25:13-44
+41            android:exported="true" >
+41-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:26:13-36
+42        </activity>
+43        <activity
+43-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:28:9-35:20
+44            android:name="com.example.madasm.MainActivity"
+44-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:29:13-41
+45            android:exported="true" >
+45-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:30:13-36
+46            <intent-filter>
+46-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:31:13-34:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:32:17-69
+47-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:32:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:33:17-77
+49-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:33:27-74
+50            </intent-filter>
 51        </activity>
 52        <activity
-52-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:36:9-39:20
+52-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:36:9-39:20
 53            android:name="com.example.madasm.UserActivity"
-53-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:37:13-41
+53-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:37:13-41
 54            android:exported="true" >
-54-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:38:13-36
+54-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:38:13-36
 55        </activity>
 56        <activity
-56-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:40:9-43:20
+56-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:40:9-43:20
 57            android:name="com.example.madasm.AddBookActivity"
-57-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:41:13-44
+57-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:41:13-44
 58            android:exported="true" >
-58-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:42:13-36
+58-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:42:13-36
 59        </activity>
 60        <activity
-60-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:44:9-47:20
+60-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:44:9-47:20
 61            android:name="com.example.madasm.BookDetailsActivity"
-61-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:45:13-48
+61-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:45:13-48
 62            android:exported="true" >
-62-->C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:46:13-36
+62-->C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:46:13-36
 63        </activity>
 64        <activity
 64-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\927a92bb58512ffd043b142ab061708a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20

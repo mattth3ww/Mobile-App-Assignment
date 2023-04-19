@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:2:1-49:12
+ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:2:1-49:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\e904d13c94fab84e5f7a903e18442a30\transformed\constraintlayout-2.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-3\8c22e8f45e62b7ec7336d2dca5a60c17\transformed\appcompat-1.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\ASUS\.gradle\caches\transforms-3\a0aaf9182b8ccba02035d2a87da8c29a\transformed\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
@@ -67,25 +67,25 @@ MERGED from [com.google.firebase:firebase-components:17.1.0] C:\Users\ASUS\.grad
 MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ASUS\.gradle\caches\transforms-3\3b5191a87dc50d5cabb88f2c7e4b037d\transformed\picasso-2.71828\AndroidManifest.xml:2:1-14:12
 MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\f3f301166ae7d3d0cc487189db2a8f52\transformed\exifinterface-27.1.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\0883ae60da5efd7251db9ab270738c42\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:2:1-49:12
 	package
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:3:5-33
-		INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:3:5-33
+		INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:2:1-49:12
-		INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:2:1-49:12
+		INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:2:1-49:12
-		INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:2:1-49:12
+		INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:4:5-67
+ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:4:5-67
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\927a92bb58512ffd043b142ab061708a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\927a92bb58512ffd043b142ab061708a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement:21.2.1] C:\Users\ASUS\.gradle\caches\transforms-3\89504e6016186874669cc97b525c43e4\transformed\play-services-measurement-21.2.1\AndroidManifest.xml:23:5-67
@@ -99,9 +99,9 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:21.2.1] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.1] C:\Users\ASUS\.gradle\caches\transforms-3\b704a9fe0f1b46af6f74207d12026f4a\transformed\play-services-measurement-sdk-api-21.2.1\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.2.1] C:\Users\ASUS\.gradle\caches\transforms-3\b704a9fe0f1b46af6f74207d12026f4a\transformed\play-services-measurement-sdk-api-21.2.1\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:4:22-64
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:5:5-48:19
+ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:5:5-48:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\e904d13c94fab84e5f7a903e18442a30\transformed\constraintlayout-2.1.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\e904d13c94fab84e5f7a903e18442a30\transformed\constraintlayout-2.1.0\AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:glide:4.12.0] C:\Users\ASUS\.gradle\caches\transforms-3\47eb9efafcafab52ef59ec363882e75f\transformed\glide-4.12.0\AndroidManifest.xml:10:5-20
@@ -151,79 +151,79 @@ MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\ASUS\.gradle\caches\
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0] C:\Users\ASUS\.gradle\caches\transforms-3\649d1fa301748884f14818a7f0db4c14\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:8:9-33
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:8:9-33
 	android:roundIcon
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:11:9-40
 activity#com.example.madasm.Login
-ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:12:9-19:20
+ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:12:9-15:20
 	android:exported
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:14:13-36
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:14:13-36
 	android:name
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:13:13-34
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:15:13-18:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:16:17-69
-	android:name
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:16:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:17:17-77
-	android:name
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:17:27-74
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:13:13-34
 activity#com.example.madasm.RegistrationActivity
-ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:20:9-23:20
+ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:16:9-19:20
 	android:exported
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:22:13-36
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:18:13-36
 	android:name
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:21:13-49
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:17:13-49
 activity#com.example.madasm.ForgotPasswordActivity
-ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:24:9-27:20
+ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:20:9-23:20
 	android:exported
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:26:13-36
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:22:13-36
 	android:name
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:25:13-51
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:21:13-51
 activity#com.example.madasm.SettingActivity
-ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:28:9-31:20
+ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:24:9-27:20
 	android:exported
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:30:13-36
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:26:13-36
 	android:name
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:29:13-44
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:25:13-44
 activity#com.example.madasm.MainActivity
-ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:32:9-35:20
+ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:28:9-35:20
 	android:exported
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:34:13-36
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:30:13-36
 	android:name
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:33:13-41
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:29:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:31:13-34:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:32:17-69
+	android:name
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:32:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:33:17-77
+	android:name
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:33:27-74
 activity#com.example.madasm.UserActivity
-ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:36:9-39:20
+ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:36:9-39:20
 	android:exported
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:38:13-36
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:38:13-36
 	android:name
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:37:13-41
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:37:13-41
 activity#com.example.madasm.AddBookActivity
-ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:40:9-43:20
+ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:40:9-43:20
 	android:exported
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:42:13-36
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:42:13-36
 	android:name
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:41:13-44
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:41:13-44
 activity#com.example.madasm.BookDetailsActivity
-ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:44:9-47:20
+ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:44:9-47:20
 	android:exported
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:46:13-36
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:46:13-36
 	android:name
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml:45:13-48
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml:45:13-48
 uses-sdk
-INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\e904d13c94fab84e5f7a903e18442a30\transformed\constraintlayout-2.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\e904d13c94fab84e5f7a903e18442a30\transformed\constraintlayout-2.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\ASUS\.gradle\caches\transforms-3\8c22e8f45e62b7ec7336d2dca5a60c17\transformed\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
@@ -350,16 +350,16 @@ MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\ASUS\.gradle\cac
 MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\f3f301166ae7d3d0cc487189db2a8f52\transformed\exifinterface-27.1.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\0883ae60da5efd7251db9ab270738c42\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\ASUS\.gradle\caches\transforms-3\0883ae60da5efd7251db9ab270738c42\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\ASUS\Desktop\Mobile Assignment 1\MADasm V1\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\ASUS\Desktop\MADasm\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-auth:21.1.0] C:\Users\ASUS\.gradle\caches\transforms-3\927a92bb58512ffd043b142ab061708a\transformed\firebase-auth-21.1.0\AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement:21.2.1] C:\Users\ASUS\.gradle\caches\transforms-3\89504e6016186874669cc97b525c43e4\transformed\play-services-measurement-21.2.1\AndroidManifest.xml:24:5-79

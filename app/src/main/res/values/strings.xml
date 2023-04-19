@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BookMate</string>
+    <string name="book_API_key">AIzaSyCd1rlojvk_tXRKvAxUzbQHR9S_IWqYIzo</string>
+    <string name="select_image">Please select an image</string>
+</resources>
