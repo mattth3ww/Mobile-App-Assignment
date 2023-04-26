@@ -5,8 +5,10 @@
       <map>
         <entry key="..\:/Users/ASUS/Desktop/MADasm/app/src/main/res/drawable/switch_track_dark.xml" value="0.22552083333333334" />
         <entry key="..\:/Users/ASUS/Desktop/MADasm/app/src/main/res/layout/activity_add_book.xml" value="0.24383561643835616" />
+        <entry key="..\:/Users/ASUS/Desktop/MADasm/app/src/main/res/layout/activity_book_details.xml" value="0.21578947368421053" />
         <entry key="..\:/Users/ASUS/Desktop/MADasm/app/src/main/res/layout/activity_main.xml" value="0.2907608695652174" />
         <entry key="..\:/Users/ASUS/Desktop/MADasm/app/src/main/res/layout/book_item_layout.xml" value="0.25501432664756446" />
+        <entry key="..\:/Users/ASUS/Desktop/MADasm/app/src/main/res/layout/book_rv_item.xml" value="0.35260416666666666" />
         <entry key="..\:/Users/ASUS/Desktop/MADasm/app/src/main/res/layout/content_page.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/ASUS/Desktop/MADasm/app/src/main/res/layout/dummy_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/ASUS/Desktop/MADasm/app/src/main/res/layout/forgotpassword.xml" value="0.36666666666666664" />
@@ -17,7 +19,6 @@
         <entry key="..\:/Users/ASUS/Desktop/MADasm/app/src/main/res/layout/setting_page.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/ASUS/Desktop/MADasm/app/src/main/res/layout/testbook.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/ASUS/Desktop/MADasm/app/src/main/res/layout/user_page.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/ASUS/Desktop/Mobile Assignment 1/MADasm V1/app/src/main/res/layout/login.xml" value="0.1" />
       </map>
     </option>
   </component>

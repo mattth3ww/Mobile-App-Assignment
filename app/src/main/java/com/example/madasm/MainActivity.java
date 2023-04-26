@@ -1,35 +1,45 @@
 package com.example.madasm;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-
-import android.support.annotation.Nullable;
 import android.view.View;
-
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private BookAdapter bookAdapter;
-    private ArrayList<Book> books;
-    private EditText etSearch;
-    private ImageButton btnSearch;
-    private Button btnAdd;
+    // Creating variables for our request queue, array list, progress bar, edit text, image button and recycler view.
+    private RequestQueue mRequestQueue;
+    private ArrayList<BookInfo> bookInfoArrayList;
+    private ProgressBar progressBar;
+    private EditText searchEdt;
+    private ImageButton searchBtn;
+    private ImageButton btnHome;
     private ImageButton btnUser;
     private ImageButton btnSettings;
-    private ImageButton btnHome;
-    private RecyclerView sliderRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,36 +47,28 @@ public class MainActivity extends AppCompatActivity {
         setupTheme();
         setContentView(R.layout.main);
 
-        etSearch = findViewById(R.id.etSearch);
-        btnSearch = findViewById(R.id.btnSearch);
-        btnAdd = findViewById(R.id.btnAdd);
+        // Initializing views.
+        progressBar = findViewById(R.id.idLoadingPB);
+        searchEdt = findViewById(R.id.etSearch);
+        searchBtn = findViewById(R.id.btnSearch);
+        btnHome = findViewById(R.id.btnHome);
         btnUser = findViewById(R.id.btnUser);
         btnSettings = findViewById(R.id.btnSettings);
-        btnHome = findViewById(R.id.btnHome);
 
-        // Set up the books ArrayList and add sample data
-        books = new ArrayList<>();
-        books.add(new Book("The Great Gatsby", "F. Scott Fitzgerald", "Book1", R.drawable.pepecry));
-        books.add(new Book("To Kill a Mockingbird", "Harper Lee", "Book2", R.drawable.pepehappy));
-        books.add(new Book("1984", "George Orwell", "Book3", R.drawable.pepecry));
-        books.add(new Book("Pride and Prejudice", "Jane Austen", "Book4", R.drawable.pepehappy));
-        books.add(new Book("The Catcher in the Rye", "J.D. Salinger", "Book5", R.drawable.pepecry));
-        books.add(new Book("Animal Farm", "George Orwell", "Book6", R.drawable.pepehappy));
-
-        // Set up the book adapter and recycler view
-        bookAdapter = new BookAdapter(this, books, new BookAdapter.OnItemClickListener() {
+        // On Click Listener for every buttons
+        searchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onItemClick(Book book) {
-                Intent intent = new Intent(MainActivity.this, BookDetailsActivity.class);
-                intent.putExtra(BookDetailsActivity.EXTRA_BOOK, book);
-                startActivity(intent);
+            public void onClick(View v) {
+                progressBar.setVisibility(View.VISIBLE);
+                // Validation to check for empty search bar
+                if (searchEdt.getText().toString().isEmpty()) {
+                    searchEdt.setError("Please enter search query");
+                    return;
+                }
+                // If the search query is not empty then call the get book info method to load the books from the API
+                getBooksInfo(searchEdt.getText().toString());
             }
         });
-
-        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        sliderRecyclerView = findViewById(R.id.sliderRecyclerView);
-        sliderRecyclerView.setLayoutManager(layoutManager);
-        sliderRecyclerView.setAdapter(bookAdapter);
 
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,54 +96,87 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        // Set up the search button
-        btnSearch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String query = etSearch.getText().toString();
-                if (query.isEmpty()) {
-                    bookAdapter.updateData(books);
-                } else {
-                    ArrayList<Book> searchResults = new ArrayList<>();
-                    for (Book book : books) {
-                        if (book.getTitle().toLowerCase().contains(query.toLowerCase())
-                                || book.getAuthor().toLowerCase().contains(query.toLowerCase())) {
-                            searchResults.add(book);
-                        }
-                    }
-                    bookAdapter.updateData(searchResults);
-                }
-            }
-        });
-
-        // Set up the add button
-        btnAdd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AddBookActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
-    // onActivityResult method for handling result from AddBookActivity
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
+    private void getBooksInfo(String query) {
 
-        if (requestCode == AddBookActivity.REQUEST_CODE && resultCode == RESULT_OK && data != null) {
-            // Extract book data from intent
-            String title = data.getStringExtra(AddBookActivity.EXTRA_TITLE);
-            String author = data.getStringExtra(AddBookActivity.EXTRA_AUTHOR);
-            String coverImage = data.getStringExtra(AddBookActivity.EXTRA_COVER_IMAGE);
-            int coverImageResource = data.getIntExtra(AddBookActivity.EXTRA_COVER_IMAGE_RESOURCE, 0);
+        // Creating a new array list.
+        bookInfoArrayList = new ArrayList<>();
 
-            // Create a new book object and add it to the book list
-            Book book = new Book(title, author, coverImage, coverImageResource);
-            books.add(book);
-            bookAdapter.notifyDataSetChanged();
-        }
+        // Below line is use to initialize the variable for our request queue
+        mRequestQueue = Volley.newRequestQueue(MainActivity.this);
+
+        // Below line is use to clear cache this will be use when our data is being updated
+        mRequestQueue.getCache().clear();
+
+        // URL for getting data from API in JSON format
+        String url = "https://www.googleapis.com/books/v1/volumes?q=" + query;
+
+        // Below line we are creating a new request queue.
+        RequestQueue queue = Volley.newRequestQueue(MainActivity.this);
+
+        // Below line is use to make json object request inside that we are passing url, get method and getting JSON object
+        JsonObjectRequest booksObjrequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                progressBar.setVisibility(View.GONE);
+                // Inside on response method we are extracting all the JSON data.
+                try {
+                    JSONArray itemsArray = response.getJSONArray("items");
+                    for (int i = 0; i < itemsArray.length(); i++) {
+                        JSONObject itemsObj = itemsArray.getJSONObject(i);
+                        JSONObject volumeObj = itemsObj.getJSONObject("volumeInfo");
+                        String title = volumeObj.optString("title");
+                        String subtitle = volumeObj.optString("subtitle");
+                        JSONArray authorsArray = volumeObj.getJSONArray("authors");
+                        String publisher = volumeObj.optString("publisher");
+                        String publishedDate = volumeObj.optString("publishedDate");
+                        String description = volumeObj.optString("description");
+                        int pageCount = volumeObj.optInt("pageCount");
+                        JSONObject imageLinks = volumeObj.optJSONObject("imageLinks");
+                        String thumbnail = imageLinks.optString("thumbnail");
+                        String previewLink = volumeObj.optString("previewLink");
+                        String infoLink = volumeObj.optString("infoLink");
+                        JSONObject saleInfoObj = itemsObj.optJSONObject("saleInfo");
+                        String buyLink = saleInfoObj.optString("buyLink");
+                        ArrayList<String> authorsArrayList = new ArrayList<>();
+                        if (authorsArray.length() != 0) {
+                            for (int j = 0; j < authorsArray.length(); j++) {
+                                authorsArrayList.add(authorsArray.optString(i));
+                            }
+                        }
+                        // After extracting all the data we are saving this data in our BookInfo modal class
+                        BookInfo bookInfo = new BookInfo(title, subtitle, authorsArrayList, publisher, publishedDate, description, pageCount, thumbnail, previewLink, infoLink, buyLink);
+
+                        // Below line is use to pass our modal class in our array list.
+                        bookInfoArrayList.add(bookInfo);
+
+                        // Below line is use to pass our array list in adapter class.
+                        BookAdapter adapter = new BookAdapter(bookInfoArrayList, MainActivity.this);
+
+                        // Below line is use to add linear layout manager for our recycler view.
+                        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(MainActivity.this, RecyclerView.VERTICAL, false);
+                        RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.sliderRecyclerView);
+
+                        // In below line we are setting layout manager and adapter to our recycler view.
+                        mRecyclerView.setLayoutManager(linearLayoutManager);
+                        mRecyclerView.setAdapter(adapter);
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    // Display a toast message when we get any error from API
+                    Toast.makeText(MainActivity.this, "No Data Found" + e, Toast.LENGTH_SHORT).show();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                // Displaying error message in toast
+                Toast.makeText(MainActivity.this, "Error found is " + error, Toast.LENGTH_SHORT).show();
+            }
+        });
+        // Finally, we are adding our JSON object request in our request queue
+        queue.add(booksObjrequest);
     }
 
     private void setupTheme() {

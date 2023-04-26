@@ -1,114 +1,100 @@
 package com.example.madasm;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 
-public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder> {
+public class BookAdapter extends RecyclerView.Adapter<BookAdapter.BookViewHolder> {
 
-    private Context context;
-    private ArrayList<Book> bookList;
-    private OnItemClickListener listener;
+    // creating variables for arraylist and context.
+    private ArrayList<BookInfo> bookInfoArrayList;
+    private Context mcontext;
 
-    // Define interface for item click listener
-    public interface OnItemClickListener {
-        void onItemClick(Book book);
-    }
-
-    public BookAdapter(Context context, ArrayList<Book> bookList, OnItemClickListener listener) {
-        this.context = context;
-        this.bookList = bookList;
-        this.listener = listener;
-    }
-
-    // Inner class for BookViewHolder
-    class BookViewHolder extends RecyclerView.ViewHolder {
-
-        private ImageView coverImageView;
-        private TextView titleTextView;
-        private TextView authorTextView;
-
-        public BookViewHolder(@NonNull View itemView) {
-            super(itemView);
-            coverImageView = itemView.findViewById(R.id.coverImageView);
-            titleTextView = itemView.findViewById(R.id.titleTextView);
-            authorTextView = itemView.findViewById(R.id.authorTextView);
-
-            // Set click listener on item view
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    int position = getAdapterPosition();
-                    if (position != RecyclerView.NO_POSITION) {
-                        Book book = bookList.get(position);
-                        listener.onItemClick(book);
-                    }
-                }
-            });
-        }
+    // creating constructor for array list and context.
+    public BookAdapter(ArrayList<BookInfo> bookInfoArrayList, Context mcontext) {
+        this.bookInfoArrayList = bookInfoArrayList;
+        this.mcontext = mcontext;
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.book_item_layout, parent, false);
-        return new ViewHolder(view);
-    }
-
-    // Update data in the adapter
-    public void updateData(ArrayList<Book> newBooks) {
-        bookList.clear();
-        bookList.addAll(newBooks);
-        notifyDataSetChanged();
+    public BookViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        // inflating our layout for item of recycler view item.
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.book_rv_item, parent, false);
+        return new BookViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Book currentBook = bookList.get(position);
+    public void onBindViewHolder(@NonNull BookViewHolder holder, int position) {
 
-        holder.coverImageView.setImageResource(currentBook.getCoverImage());
-        holder.titleTextView.setText(currentBook.getTitle());
-        holder.authorTextView.setText(currentBook.getAuthor());
-        holder.descriptionTextView.setText(currentBook.getDescription());
+        // inside on bind view holder method we are
+        // setting our data to each UI component.
+        BookInfo bookInfo = bookInfoArrayList.get(position);
+        holder.nameTV.setText(bookInfo.getTitle());
+        holder.publisherTV.setText(bookInfo.getPublisher());
+        holder.pageCountTV.setText("No of Pages : " + bookInfo.getPageCount());
+        holder.dateTV.setText(bookInfo.getPublishedDate());
 
-        // Set click listener for the item view
+        // below line is use to set image from URL in our image view.
+        Picasso.get().load(bookInfo.getThumbnail()).into(holder.bookIV);
+
+        // below line is use to add on click listener for our item of recycler view.
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                // Call onItemClick method of the listener with the clicked book
-                if (listener != null) {
-                    int adapterPosition = holder.getAdapterPosition();
-                    if (adapterPosition != RecyclerView.NO_POSITION) {
-                        listener.onItemClick(bookList.get(adapterPosition));
-                    }
-                }
+            public void onClick(View v) {
+                // inside on click listener method we are calling a new activity
+                // and passing all the data of that item in next intent.
+                Intent i = new Intent(mcontext, BookDetails.class);
+                i.putExtra("title", bookInfo.getTitle());
+                i.putExtra("subtitle", bookInfo.getSubtitle());
+                i.putExtra("authors", bookInfo.getAuthors());
+                i.putExtra("publisher", bookInfo.getPublisher());
+                i.putExtra("publishedDate", bookInfo.getPublishedDate());
+                i.putExtra("description", bookInfo.getDescription());
+                i.putExtra("pageCount", bookInfo.getPageCount());
+                i.putExtra("thumbnail", bookInfo.getThumbnail());
+                i.putExtra("previewLink", bookInfo.getPreviewLink());
+                i.putExtra("infoLink", bookInfo.getInfoLink());
+                i.putExtra("buyLink", bookInfo.getBuyLink());
+
+                // after passing that data we are
+                // starting our new intent.
+                mcontext.startActivity(i);
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return bookList.size();
+        // inside get item count method we
+        // are returning the size of our array list.
+        return bookInfoArrayList.size();
     }
 
-    static class ViewHolder extends RecyclerView.ViewHolder {
-        ImageView coverImageView;
-        TextView titleTextView;
-        TextView authorTextView;
-        TextView descriptionTextView;
+    public class BookViewHolder extends RecyclerView.ViewHolder {
+        // below line is use to initialize
+        // our text view and image views.
+        TextView nameTV, publisherTV, pageCountTV, dateTV;
+        ImageView bookIV;
 
-        ViewHolder(@NonNull View itemView) {
+        public BookViewHolder(View itemView) {
             super(itemView);
-            coverImageView = itemView.findViewById(R.id.book_cover);
-            titleTextView = itemView.findViewById(R.id.book_title);
-            authorTextView = itemView.findViewById(R.id.book_author);
-            descriptionTextView = itemView.findViewById(R.id.book_description);
+            nameTV = itemView.findViewById(R.id.idTVBookTitle);
+            publisherTV = itemView.findViewById(R.id.idTVpublisher);
+            pageCountTV = itemView.findViewById(R.id.idTVPageCount);
+            dateTV = itemView.findViewById(R.id.idTVDate);
+            bookIV = itemView.findViewById(R.id.idIVbook);
         }
     }
 }

@@ -10,12 +10,6 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
-        <Button
-            android:id="@+id/btnAdd"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@android:drawable/ic_menu_add" />
-
         <!-- Search Bar -->
         <EditText
             android:id="@+id/etSearch"
@@ -24,7 +18,6 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_toLeftOf="@id/btnSearch"
-            android:layout_toRightOf="@id/btnAdd"
             android:hint="Search for a book"
             android:padding="8dp" />
 
@@ -43,8 +36,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/topSection"
-        android:layout_above="@id/bottomSection">
+        android:layout_above="@id/bottomSection"
+        android:layout_below="@id/topSection">
 
         <RelativeLayout
             android:id="@+id/middleSection"
@@ -56,6 +49,14 @@
                 android:id="@+id/sliderRecyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
+            <!--progressbar for displaying our loading indicator-->
+            <ProgressBar
+                android:id="@+id/idLoadingPB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
 
         </RelativeLayout>
 
